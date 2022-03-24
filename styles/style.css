@@ -156,10 +156,6 @@
   color: #000000;
 }
 
-.section-subtitle_theme_light {
-  color: #000000;
-}
-
 .table {
   margin: 0;
   padding: 0;
@@ -173,7 +169,7 @@
   /* color задал в модификаторах тк он разный */
 }
 
-.table__cell_theme_light {
+.table__cell {
   margin-top: 60px;
   width: 250px;
 }
@@ -260,7 +256,7 @@
   position: relative;
 }
 
-.section-title_dark {
+.section-title_theme_dark {
   color: white;
 }
 
@@ -289,6 +285,7 @@
   right: -210px;
   width: 877px;
   height: 877px;
+  background-image: url(../images/kaufman-triangle.svg);
 }
 
 .footer {
@@ -298,6 +295,7 @@
   justify-content: center;
   min-height: 350px;
   padding: 60px 0 40px;
+  box-sizing: border-box; /* положил паддинги внутрь*/
 }
 
 .footer__columns {
@@ -306,11 +304,18 @@
   justify-content: space-between;
 }
 
-.footer__column_content_copyright {
-  width: 50%;
+.footer__column {
   display: flex;
-  justify-content: space-between;
+}
+
+.footer__column_content_copyright {
+  position: relative; /* дописано чтоб применить флекс базис*/
+  flex-basis: 711px; /* дописано чтоб применить флекс базис*/
+  justify-content: flex-start; /* дописано чтоб применить флекс базис*/
+  align-items: flex-start; /* дописано чтоб применить флекс базис*/
+  /*justify-content: space-between;
   flex-direction: column;
+  width: 50%; */
 }
 
 .logo_place_footer {
@@ -319,14 +324,17 @@
 }
 
 .footer__author {
-  margin: 18px 0;
+  /* margin: 18px 0; */
+  position: absolute; /* дописано чтоб применить флекс базис*/
+  left: 0; /* дописано чтоб применить флекс базис*/
+  bottom: 18px; /* дописано чтоб применить флекс базис*/
+  margin: 18px 0 0; /* дописано чтоб применить флекс базис*/
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
 }
 
 .footer__column_content_info {
-  display: flex;
   flex-direction: column;
 }
 
@@ -337,18 +345,17 @@
   font-weight: bold;
 }
 
-.footer__column_link {
+.footer__column-links {
   margin: 0 0 16px;
   list-style: none;
   padding: 0;
 }
 
 .footer__column_content_social {
-  display: flex;
   flex-direction: column;
 }
 
-.footer__column_links {
+.footer__column-link {
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
@@ -357,8 +364,10 @@
 
 }
 
-.footer_social-icon {
+.footer__social-icon {
   margin-right: 10px;
   width: 16px;
   height: 16px;
 }
+
+
