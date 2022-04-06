@@ -1,0 +1,12 @@
+.table {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: #000000;
+
+  /* color задал в модификаторах тк он разный */
+}

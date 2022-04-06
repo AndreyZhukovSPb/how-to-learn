@@ -1,0 +1,9 @@
+.footer__column_content_copyright {
+  position: relative; /* дописано чтоб применить флекс базис*/
+  flex-basis: 711px; /* дописано чтоб применить флекс базис*/
+  justify-content: flex-start; /* дописано чтоб применить флекс базис*/
+  align-items: flex-start; /* дописано чтоб применить флекс базис*/
+  /*justify-content: space-between;
+  flex-direction: column;
+  width: 50%; */
+}
