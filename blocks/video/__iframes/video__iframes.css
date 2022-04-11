@@ -1,5 +1,6 @@
 .video__iframes {
-  font-size: 20px; /* сделал чтобы реализовать промежуток между iframe*/
+  display: flex;
+  column-gap: 20px;
   margin: 50px auto -50px;
   z-index: 1;
 }

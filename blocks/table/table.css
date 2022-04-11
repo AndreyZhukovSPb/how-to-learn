@@ -7,6 +7,4 @@
   justify-content: space-between;
   flex-wrap: wrap;
   color: #000000;
-
-  /* color задал в модификаторах тк он разный */
 }
